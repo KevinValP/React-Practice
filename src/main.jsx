@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-
+import { App } from './App.jsx'
 
 const SpecialButton = ({text}) =>{
   return(
@@ -10,10 +10,5 @@ const SpecialButton = ({text}) =>{
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
-  <React.Fragment>
-    <SpecialButtonButton text ="Hola"/>
-    <SpecialButtonButton text ="Adios"/>
-    <SpecialButtonButton text ="Hasta Luego"/>        
-
-  </React.Fragment>
+  <App />
 )
