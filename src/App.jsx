@@ -1,19 +1,15 @@
-export function App(){
-    return(
-        <article>
-            <header>
-                <img  alt="Avatar de Ejemplo" src="https://unavatar.io/github/37t?fallback=https://avatars.githubusercontent.com/u/66378906?v=4"/>
-            
-                <div>
-                    <strong>Tom jaja que tonto</strong>
-                    <span>@tomtonto</span>
-                </div>
-            </header>
-            <aside>
-                <button>
-                    Seguir
-                </button>
-            </aside>
-        </article>
+
+import './App.css';
+import { TwitterFollowCard } from './TwitterFollowCard';
+export function App() {
+    return (
+        <section className='App'>
+            <TwitterFollowCard username={'reactjs'} name={'React'} isFollowing={true} avatarURL={'https://unavatar.io/twitter/reactjs'} />
+            <TwitterFollowCard username={'angular'} name={'Angular'} isFollowing={false} avatarURL={'https://unavatar.io/twitter/angular'} />
+            <TwitterFollowCard username={'vuejs'} name={'Vue'} isFollowing={true} avatarURL={'https://unavatar.io/twitter/vuejs'} />
+            <TwitterFollowCard username={'vegetta777'} name={'Vegetta777'} isFollowing={true} avatarURL={'https://unavatar.io/twitter/vegetta777'} />
+
+        </section>
+
     )
 }
